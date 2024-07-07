@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Chapter of CSS Gradients</title>
+    </head>
+    <body style="background-color:white;">
+        <style>
+            p{
+                    background-image:linear-gradient(red,orange,yellow);
+                    height:100px
+            }
+            .thing2{
+                background-image:repeating-radial-gradient(red,yellow 5%,green 9%);
+                height:100px;
+            }
+            .thing20{
+                background-image:linear-gradient( to right,rgba(245, 40, 145, 0),rgba(245, 40, 145, 0.8));
+            }
+        </style>
+        <h5 style="color:blue;"><center>The Chapter of CSS Gradients</center></h5>
+        <h5>Linear Gradient-Digonal</h5>
+        <h6>This linear gradient starts at top left, transitioning to yellow (at bottom right):</h6>
+        <p class="thing1"></p>
+        <h5>Repeating Radial Grandient</h5>
+        <p class="thing2"></p>
+        <h5>Linear Gradient - Transparency</h5>
+        <h6>to add transparency, we use the rbga() function to define the color stops. The last parameter in the rbga() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency. I indicate full color (no transparency)</h6>
+        <p class="thing20"></p>
+    </body>
+</html>
